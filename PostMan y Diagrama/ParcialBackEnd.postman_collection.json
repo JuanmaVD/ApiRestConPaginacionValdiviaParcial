@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "fba440f0-6b16-4b10-95c6-b3e3bfc574df",
+		"name": "ParcialBackEnd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29887515"
+	},
+	"item": [
+		{
+			"name": "Persona",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://parcial-443u.onrender.com/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"parcial-443u",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://parcial-443u.onrender.com/api/v1/personas/1",
+							"protocol": "https",
+							"host": [
+								"parcial-443u",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Miguel\",\r\n    \"apellido\": \"Valdivia\",\r\n    \"dni\": 123456\r\n}"
+						},
+						"url": {
+							"raw": "https://parcial-443u.onrender.com/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"parcial-443u",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"nombre\": \"Leo\",\r\n        \"apellido\": \"Kruzliak\",\r\n        \"dni\": 123456\r\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/v1/personas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://parcial-443u.onrender.com/api/v1/personas/1",
+							"protocol": "https",
+							"host": [
+								"parcial-443u",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://parcial-443u.onrender.com/api/v1/personas/search?filtro=a",
+							"protocol": "https",
+							"host": [
+								"parcial-443u",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"search"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "a"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ALL Paged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://parcial-443u.onrender.com/api/v1/personas/searchPaged?filtro=a&page=0&size=2",
+							"protocol": "https",
+							"host": [
+								"parcial-443u",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"searchPaged"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "a"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
