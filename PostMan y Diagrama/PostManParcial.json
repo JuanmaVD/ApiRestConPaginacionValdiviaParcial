@@ -67,7 +67,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Miguel\",\r\n    \"apellido\": \"Valdivia\",\r\n    \"dni\": 123456\r\n}"
+							"raw": "{\r\n    \"nombre\": \"Ana\",\r\n    \"apellido\": \"Valdivia\",\r\n    \"dni\": 123456\r\n}"
 						},
 						"url": {
 							"raw": "https://parcial-443u.onrender.com/api/v1/personas",
@@ -99,20 +99,21 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n        \"id\": 1,\r\n        \"nombre\": \"Leo\",\r\n        \"apellido\": \"Kruzliak\",\r\n        \"dni\": 123456\r\n    }"
+							"raw": "{\r\n        \"id\": 2,\r\n        \"nombre\": \"Codi\",\r\n        \"apellido\": \"Kruzliak\",\r\n        \"dni\": 123\r\n    }"
 						},
 						"url": {
-							"raw": "http://localhost:8083/api/v1/personas/1",
-							"protocol": "http",
+							"raw": "https://parcial-443u.onrender.com/api/v1/personas/2",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"parcial-443u",
+								"onrender",
+								"com"
 							],
-							"port": "8083",
 							"path": [
 								"api",
 								"v1",
 								"personas",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -176,13 +177,45 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://parcial-443u.onrender.com/api/v1/personas/searchPaged?filtro=a&page=0&size=2",
+							"raw": "https://parcial-443u.onrender.com/api/v1/personas/searchPaged?page=0&size=2",
 							"protocol": "https",
 							"host": [
 								"parcial-443u",
 								"onrender",
 								"com"
 							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"searchPaged"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchPaged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/api/v1/personas/searchPaged?filtro=a&page=0&size=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
 							"path": [
 								"api",
 								"v1",
@@ -200,7 +233,7 @@
 								},
 								{
 									"key": "size",
-									"value": "2"
+									"value": "5"
 								}
 							]
 						}
