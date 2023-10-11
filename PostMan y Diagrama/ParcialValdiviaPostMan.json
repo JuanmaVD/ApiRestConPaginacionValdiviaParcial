@@ -210,12 +210,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8085/api/v1/personas/searchPaged?filtro=a&page=0&size=5",
-							"protocol": "http",
+							"raw": "https://parcial-443u.onrender.com/api/v1/personas/searchPaged?filtro=a&page=0&size=5",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"parcial-443u",
+								"onrender",
+								"com"
 							],
-							"port": "8085",
 							"path": [
 								"api",
 								"v1",
